@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>NewsFlow</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/css/styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <a href="/" class="logo">NewsFlow</a>
+        <form id="search-form">
+          <input type="text" id="query" placeholder="Search articles..." />
+          <button type="submit">Search</button>
+        </form>
+      </nav>
+    </header>
+
+    <div class="filters">
+      <div class="filter-list categories">
+        <div class="filter-item active" data-category="">All</div>
+        <div class="filter-item" data-category="Technology">Technology</div>
+        <div class="filter-item" data-category="Politics">Politics</div>
+        <div class="filter-item" data-category="Business">Business</div>
+        <div class="filter-item" data-category="Sports">Sports</div>
+      </div>
+      <div class="filter-list countries">
+        <div class="filter-item active" data-country="">All Countries</div>
+        <div class="filter-item" data-country="US">US</div>
+        <div class="filter-item" data-country="UK">UK</div>
+        <div class="filter-item" data-country="QA">QA</div>
+        <div class="filter-item" data-country="XK">XK</div>
+      </div>
+    </div>
+
+    <main>
+      <div id="loading-indicator" class="loading-indicator">
+        <div class="loader"></div>
+        <p>Loading articles...</p>
+      </div>
+      <div id="articles"></div>
+    </main>
+
+    <script src="./src/js/script.js"></script>
+  </body>
+</html>

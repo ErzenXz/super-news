@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Article - NewsFlow</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/css/styles.css" />
+    <link rel="stylesheet" href="./src/css/article.css" />
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar">
+        <a href="index.html" class="logo">NewsFlow</a>
+        <div class="nav-links">
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </nav>
+    </header>
+    <div id="loading-indicator" class="loading-indicator" style="display: none">
+      <div class="loader"></div>
+      <p>Loading articles...</p>
+    </div>
+    <main>
+      <div class="container">
+        <article id="article-content" class="article-content"></article>
+        <div class="article-actions">
+          <button id="summarize-btn" class="btn summarize-btn">
+            Summarize Article
+          </button>
+        </div>
+        <section id="summary" class="summary-section"></section>
+        <section class="comments">
+          <h2>Comments</h2>
+          <p>No comments yet. Be the first to comment!</p>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 NewsFlow. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="./src/js/article.js"></script>
+  </body>
+</html>
