@@ -21,7 +21,7 @@ function fetchArticleById(id) {
   const loadingIndicator = document.getElementById("loading-indicator");
   loadingIndicator.style.display = "block";
 
-  fetch(`https://apis.erzen.xyz/news/get-article/${id}`)
+  fetch(`https://apis.erzen.tk/news/get-article/${id}`)
     .then((response) => response.json())
     .then((data) => {
       loadingIndicator.style.display = "none";
@@ -95,12 +95,12 @@ function fetchSummarize(id) {
   loadingIndicator.style.display = "flex";
   summarySection.innerHTML = "";
 
-  return fetch(`https://apis.erzen.xyz/news/get-article/${id}`)
+  return fetch(`https://apis.erzen.tk/news/get-article/${id}`)
     .then((response) => response.json())
     .then((data) => {
       if (data && data.link) {
         return fetch(
-          `https://apis.erzen.xyz/browser/fetch?url=${encodeURIComponent(
+          `https://apis.erzen.tk/browser/fetch?url=${encodeURIComponent(
             data.link
           )}`
         );

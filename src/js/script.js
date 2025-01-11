@@ -1,4 +1,4 @@
-const apiBase = "https://apis.erzen.xyz/news";
+const apiBase = "https://apis.erzen.tk/news";
 let page = 1;
 let pageSize = 18;
 let currentCategory = "";
